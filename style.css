@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Style the header */
+header {
+    background-image:url("bg.jpg");
+
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    padding: 200px;
+}
+/* style of scrollmenu */
+div.scrollmenu {
+    background-color: rgb(7, 1, 3);
+    overflow: auto;
+    white-space: nowrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+}
+
+div.scrollmenu a {
+    display: inline-flex;
+    color: white;
+    text-align: center;
+    padding-top:18px;
+    padding-bottom:18px;
+    padding-left:42px;
+    padding-right:42px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+/* navigation style */
+nav{
+    display: flex;
+    justify-content: center;
+    margin-top:40px;
+    margin-bottom:0px;
+}
+nav selfpic {
+    float: left;
+    padding: 120px;
+
+    border-radius: 12px;
+    border: 4px solid rgb(33, 110, 173);
+
+    box-shadow: rgb(33, 110, 173) 15px -17px;
+
+    background-image:url("self.jpeg");
+    background-repeat:no-repeat;
+    -webkit-background-size: 240px 240px;
+    -moz-background-size: 240px 240px;
+    -o-background-size: 240px 240px;
+    background-size: 240px 240px;
+    background-position: center; 
+    
+}
+
+/* introduction style */
+intro {
+    position: relative;
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+intro ul{
+    list-style: none;
+}
+
+/* content style */
+words{
+    float: left;
+    width: 60%;
+    position: relative;
+    top: 0px;
+    left: 80px;
+    padding: 10px;
+    text-align: left;
+    font-size: 22px;
+}
+words.edu{
+    float: left;
+    width: 50%;
+    height: 80px;
+    position: relative;
+    top: 0px;
+    left: 140px;
+}
+schoolLogo{
+    float: left;
+    width: 8%;
+    height: 100px;
+    position: relative;
+    top: 10px;
+    left: 90px;
+    padding: 20px;
+    font-size: 80px;
+    text-align: center;
+
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    
+}
+schoolLogo.rpi{
+    background-color:rgb(255, 0, 0);
+    padding-bottom: 12px;
+    padding-top: 8px;
+}
+schoolLogo.sjtu{
+    background-color:rgb(0, 140, 255);
+    padding-bottom: 12px;
+    padding-top: 8px;
+}
+words ul{
+    list-style: disc;
+}
+/* define smaller font for p, ul */
+p.s{
+    font-size: 17px;
+}
+p.l{
+    font-size: 80px;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+}
+ul.s{
+    font-size: 17px;
+}
+
+
+/* regulate the display between p and ul */
+p, ul {
+    display: inline;
+    line-height: 28px;   /* within paragraph */
+}
+
+/* the style of date and adress */
+dateAndAdress{
+    float: left;
+    width: 40%;
+    height: 100px;
+    position: relative;
+    top: 0px;
+    right: 80px;
+    padding: 10px;
+    text-align: right;
+    font-size: 22px;
+}
+
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+/* style of different text */
+h1 {
+    text-shadow: rgb(101, 98, 98) 2px 5px;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+h2 {
+    
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align: center;
+    font-size: 45px;
+    color: rgb(7, 7, 7);
+    margin-top:20px;
+    margin-bottom:40px;
+
+}
+
+p1 {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(250, 250, 250);
+}
+info {
+    position: absolute;
+    font-family: Impact, Charcoal, sans-serif;
+    left: 100px;
+    top: 150px;
+}
+div.skillTable {
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    white-space: nowrap;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    display: flex;
+    position: relative;
+    top: 0px;
+    width: 90%;
+    left: 90px;
+
+}
+div.skillTable a {
+    background-color: rgb(88, 182, 233);
+    box-shadow: 5px 5px rgb(7, 1, 3);
+    display: inline-flex;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 6px;
+    margin-right:10px;
+    margin-bottom:20px;
+}
+/* Style the footer */
+footer {
+    background-color: rgb(35, 174, 216);
+    padding: 60px;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+/* hobby story */
+div.hobby {
+    float: left;
+    width: 22%;
+    height: 550px;
+    padding:20px;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    white-space: nowrap;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    position: relative;
+    top: 0px;
+    left: 90px;
+    justify-content: center;
+    margin-left:50px;
+
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h3{
+    text-align: center;
+    color: black;
+    font-size: 24px;
+}
+p3{
+    word-wrap: break-word;
+    color: black;
+    font-size: 20px;
+    white-space:normal;
+}
+
+/* button back to top */
+#BTTBtn {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 50px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    justify-content: center;
+  }
+  
+#BTTBtn:hover {
+background-color: rgb(86, 109, 131);
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+

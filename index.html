@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--<title>CSS Template</title>-->
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="menu.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<!--The menu-->
+<button onclick="topFunction()" id="BTTBtn" title="Go to top">Back To Top</button>
+
+<div class="scrollmenu">
+    <a href="#Introduction">Introduction</a>
+    <a href="#Education">Education</a>
+    <a href="#Experience">Experience</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Certifications">Certifications</a>
+    <a href="#Skills">  Skills  </a>
+    <a href="#Hobbies">  Hobbies  </a>
+</div>
+
+<!--The header-->
+<header>
+    <h1>D's Harbor </h1>
+</header>
+<!--The introduction-->
+<section id = "Introduction">
+    <h2>Introduction</h2>
+    <nav>
+        <selfpic>
+        </selfpic>
+    </nav>
+    <nav style = "margin-top:0px;">
+        <intro>
+            <ul>
+                <li>Name: Di Zhang</li>
+                <li>Date of Birth: 08/30/1993</li>
+                <li>Email: dzk9528@gmail.com</li>
+                <li>Linkedin: www.linkedin.com/in/dizhang-3477942642</li>
+                <br>
+                <li>Seeking for position as a software engineer.</br>
+                    A coder and a dancer. Popping is a part of my life!</li>
+            </ul>
+        </intro>  
+    </nav>
+<section>
+<!--Education Part-->
+<section id="Education">
+    <h2>Education</h2>
+    <!--Master-->
+    <section>
+        <schoolLogo class="rpi">
+            <p style="color:aliceblue">R</p>
+        </schoolLogo>
+
+        <words class="edu">
+        <p><b>Rensselaer Polytechnic Institute (RPI)</b><br>
+            Master of Computer and Systems Engineering<br>
+            GPA: 3.7/4.0
+        </p> 
+        </words>  
+        
+        <dateAndAdress>
+            <p>Troy, NY<br>
+            Aug 2016 ~ Jan 2018
+            </p>
+        </dateAndAdress>
+    </section>
+    <br>
+    <!--Bachelor-->
+    <section>
+        <schoolLogo class="sjtu">
+                <p style="color:aliceblue">S</p>
+            </schoolLogo>
+        <words class="edu">
+        <p><b>Shanghai Jiao Tong University (SJTU)</b><br>
+            Bachelor of Information Engineering<br>
+            GPA: 3.3/4.3
+        </p> 
+        </words>  
+        
+        <dateAndAdress>
+            <p>Shanghai, China<br>
+            Aug 2012 ~ Jun 2016
+            </p>
+        </dateAndAdress>
+    </section>
+</section>
+<!--Experience Part-->
+<section id = "Experience">
+    <h2>Experience</h2>
+    <!--Research Assistant Intern-->
+    <section>
+            <words>
+            <p><b>Research Assistant Intern</b></p><br>
+            <p class = "s">Multidimensional Computer Vision Laboratory, RPI</p><br>
+
+            <p class = "s">Development of a video surveillance system for Airport Checkpoint
+            </p> 
+            <ul class = "s">
+                <li>Transferred video to readable type by applying ffmepg;</li>
+                <li>Applied Background Subtraction and Topological Transformation
+                    in people and bin tracking;</li>
+                <li>Constructed a Neural Network for bin Recognition to reduced false positive rate;</li>
+            </ul>
+            </words>  
+            
+            <dateAndAdress>
+                <p class = "s">May 2017 ~ Aug 2017
+                </p>
+            </dateAndAdress>
+    </section>
+    <!--Research Assistant-->
+    <section>
+            <words>
+            <p><b>Research Assistant</b></p><br>
+            <p class = "s">Institute of Image Communication and Network Engineering, SJTU</p>
+            <br><br>
+            <p class = "s">National Participation in Research Project<br>
+            Accurate Surveillance Object Detection based on Visual Consistency Constraint
+            </p> 
+            <ul class = "s">
+                <li>constructed video data set for falling down people and/or pedestrians;</li>
+                <li>Embedded Aggregated Channel Features detection algorithm into an existing tracking platform</li>
+            </ul>
+            <br>
+            <p class = "s">Bachelor’s Thesis: Pedestrian Detection and Tracking Software</p> 
+            <ul class = "s">
+                <li>Decreased False Detection Rate under 5% by joint decision of Detection and Tracking Model</li>
+                <li>Extracted Motion-History Image from the video dataset;</li>
+                <li>Matched templates with Mahalanobis Distance</li>
+            </ul>
+            </words>  
+            
+            <dateAndAdress>
+                <p class = "s">May 2017 ~ Aug 2017
+                </p>
+            </dateAndAdress>
+    </section>
+</section>
+<!--Projects-->
+<section id = "Projects">
+    <h2>Projects</h2>
+    <!--Computer Vision Project-->
+    <section>
+        <words>
+        <p><b>Computer Vision Project, RPI</b></p><br>
+        <p class = "s">Real-time Face tracking (team project)
+        </p> 
+        <ul class = "s">
+            <li>Tracked faces with Kalman filter;</li>
+            <li>Applied Kernelized Correlation Filter to accelerate detection;</li>
+            <li>Designed GUI of Face Tracking;</li>
+        </ul>
+        </words>  
+        
+        <dateAndAdress>
+            <p class = "s">Nov 2017 ~ Dec 2017
+            </p>
+        </dateAndAdress>
+    </section>
+    <!--Deep Learning Project-->
+    <section>
+        <words>
+        <p><b>Deep Learning Project, RPI</b></p><br>
+        <p class = "s">Mobile Eye Gaze Estimation
+        </p> 
+        <ul class = "s">
+            <li>Practiced Graph Visualization of Convolutional Neural Network;</li>
+            <li>Implementd a CNN architecture for Regression;</li>
+            <li>Accelerated training by applying AWS EC2/S3;</li>
+            <li>Tuned Hyper parameters to achieved test error 1.65 cm</li>
+        </ul>
+        </words>  
+        
+        <dateAndAdress>
+            <p class = "s">Mar 2017 ~ May 2018
+            </p>
+        </dateAndAdress>
+    </section>
+    <!--Digital Image Processing Project-->
+    <section>
+        <words>
+        <p><b>Digital Image Processing Project, RPI</b></p><br>
+        <p class = "s">Real-time Face Recognition System
+        </p> 
+        <ul class = "s">
+            <li>Collected faces dataset; applied Local Binary Pattern features;</li>
+            <li>Trained the model with Principle Component Analysis and Support Vector Machine;</li>
+            <li>Designed GUI for Face Recognition;</li>
+        </ul>
+        </words>  
+        
+        <dateAndAdress>
+            <p class = "s">Feb 2017 ~ Mar 2017
+            </p>
+        </dateAndAdress>
+    </section>
+    <!--College Students Innovative Practice Plan, SJTU-->
+    <section>
+        <words>
+        <p><b>College Students Innovative Practice Plan, SJTU</b></p><br>
+        <p class = "s">Development of a Robot Show System (team leader)
+        </p> 
+        <ul class = "s">
+            <li>Programed the dances of Robot;</li>
+            <li>Utilized Google Speech API to man-machine interaction system;</li>
+            <li>Developed a Robot Wireless Show System by using TCP/IP techniques;</li>
+        </ul>
+        </words>  
+        
+        <dateAndAdress>
+            <p class = "s">Nov 2013 ~ Nov 2014
+            </p>
+        </dateAndAdress>
+    </section>
+</section>
+<!--Certifications-->
+<section id = "Certifications">
+    <h2>Certifications</h2>
+    <section>
+            <words>
+            Deep Learning Specialization Coursera
+            </words>  
+    </section>
+    
+</section>
+<!--Skills-->
+<section id = "Skills">
+    <h2>Skills</h2>
+
+    <section>
+        <words>
+            <p>Skills I am proficient:
+            </p> 
+            
+        </words>
+    </section>
+    <section>
+        <div class = "skillTable">    
+            <a>Python</a>
+            <a>C/C++</a>
+            <a>MATLAB</a>
+            <a>SQL</a>
+            <a>OPENCV</a>
+            <a>CUDA</a>
+            <a>Tensorflow</a>
+            <a>Keras</a>
+            <a>Matplotlib</a>
+            <a>Pandas</a>
+            <a>scikit-learn</as>
+            <a>MFC</a>
+            <a>Git</a>
+        </div>
+    </section>
+    <section>
+        <words>
+            <p>Skills which I just start learning:
+            </p> 
+        </words>
+    </section>
+    <section>
+        <div class = "skillTable" >
+            <a style = "background:rgb(10, 171, 74)">Java</a>
+            <a style = "background:rgb(10, 171, 74)">HTML</a>
+            <a style = "background:rgb(10, 171, 74)">CSS</a>
+            <a style = "background:rgb(10, 171, 74)">JavaScript</a>
+            <a style = "background:rgb(10, 171, 74)">Swift</a>
+        </div>
+    </section>
+</section>
+<!--Hobbies-->
+<section id = "Hobbies" style = "height: 800px;">
+    <h2>Hobbies </h2>
+    <div class = "hobby">
+        <img src="code.png"></img>
+        <h3>Coding</h3>
+        <p3>
+            I have a passion for coding! Espeically when I got touched
+            with image processing and computer vision,
+            I found it is really interesting for it gave the computer the abilities 
+            to explain what it sees. 
+        </p3>
+    </div>
+    <div class = "hobby">
+        <img src="draw.png"></img>
+        <h3>Drawing</h3>
+        <p3>
+            I have learned how to draw cartoon when I was 14. 
+            Although I didn't continue improve my skills these years, 
+            I still draw some symbols or sightseeings just for fun.
+        </p3>
+    </div>
+    <div class = "hobby">
+        <img src="dance.jpg"></img>
+        <h3>StreetDance</h3>
+        <p3>
+            The eight years' learning for street dance(Popping style) made me not only a optimistic person 
+            but also fueled me with passion for it. Dance is a part of my life. 
+        </p3>
+    </div>
+</section>
+<!--footer-->
+<footer>
+    <p1>Contact me: dzk9528@gmail.com</p>
+</footer>
+</body>
+</html>
