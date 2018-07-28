@@ -4,8 +4,9 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-
+    
 }
+
 
 /* Style the header */
 header {
@@ -24,20 +25,22 @@ div.scrollmenu {
     background-color: rgb(7, 1, 3);
     overflow: auto;
     white-space: nowrap;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* overflow-y:auto; */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling:touch;
 }
-
 div.scrollmenu a {
     display: inline-flex;
     color: white;
     text-align: center;
     padding-top:18px;
     padding-bottom:18px;
-    padding-left:42px;
-    padding-right:42px;
+    padding-left:41px;
+    padding-right:41px;
     text-decoration: none;
     font-size: 18px;
+    
 }
 
 div.scrollmenu a:hover {
@@ -167,7 +170,6 @@ dateAndAdress{
     font-size: 22px;
 }
 
-
 /* Clear floats after the columns */
 section:after {
     content: "";
@@ -175,6 +177,7 @@ section:after {
     clear: both;
     
 }
+
 /* style of different text */
 h1 {
     text-shadow: rgb(101, 98, 98) 2px 5px;

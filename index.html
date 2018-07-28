@@ -3,12 +3,18 @@
 <head>
 <!--<title>CSS Template</title>-->
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script type="text/javascript" src="menu.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+<script>
+    AOS.init({duration : 1200});
+</script>
 <!--The menu-->
 <button onclick="topFunction()" id="BTTBtn" title="Go to top">Back To Top</button>
 
@@ -18,8 +24,10 @@
     <a href="#Experience">Experience</a>
     <a href="#Projects">Projects</a>
     <a href="#Certifications">Certifications</a>
-    <a href="#Skills">  Skills  </a>
-    <a href="#Hobbies">  Hobbies  </a>
+    <a href="#Skills" style="padding-left:44px;
+    padding-right:44px;">  Skills  </a>
+    <a href="#Hobbies" style="padding-left:42px;
+    padding-right:42px;">  Hobbies  </a>
 </div>
 
 <!--The header-->
@@ -27,7 +35,7 @@
     <h1>D's Harbor </h1>
 </header>
 <!--The introduction-->
-<section id = "Introduction">
+<section id = "Introduction" data-aos = "fade-down">
     <h2>Introduction</h2>
     <nav>
         <selfpic>
@@ -48,7 +56,7 @@
     </nav>
 <section>
 <!--Education Part-->
-<section id="Education">
+<section id="Education" data-aos = "fade-down">
     <h2>Education</h2>
     <!--Master-->
     <section>
@@ -90,7 +98,7 @@
     </section>
 </section>
 <!--Experience Part-->
-<section id = "Experience">
+<section id = "Experience" data-aos = "fade-down">
     <h2>Experience</h2>
     <!--Research Assistant Intern-->
     <section>
@@ -142,7 +150,7 @@
     </section>
 </section>
 <!--Projects-->
-<section id = "Projects">
+<section id = "Projects" data-aos = "fade-down">
     <h2>Projects</h2>
     <!--Computer Vision Project-->
     <section>
@@ -219,7 +227,7 @@
     </section>
 </section>
 <!--Certifications-->
-<section id = "Certifications">
+<section id = "Certifications" data-aos = "fade-down">
     <h2>Certifications</h2>
     <section>
             <words>
@@ -229,7 +237,7 @@
     
 </section>
 <!--Skills-->
-<section id = "Skills">
+<section id = "Skills" data-aos = "fade-down"> 
     <h2>Skills</h2>
 
     <section>
@@ -273,7 +281,7 @@
     </section>
 </section>
 <!--Hobbies-->
-<section id = "Hobbies" style = "height: 800px;">
+<section id = "Hobbies" style = "height: 800px;" data-aos = "fade-down">
     <h2>Hobbies </h2>
     <div class = "hobby">
         <img src="code.png"></img>
