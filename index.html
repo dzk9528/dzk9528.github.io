@@ -3,12 +3,14 @@
 <head>
 <!--<title>CSS Template</title>-->
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="click_link.css">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript" src="click_link.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content = "width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -47,7 +49,12 @@
                 <li>Name: Di Zhang</li>
                 <li>Date of Birth: 08/30/1993</li>
                 <li>Email: dzk9528@gmail.com</li>
-                <li>Linkedin: www.linkedin.com/in/dizhang-3477942642</li>
+                <li>Linkedin: 
+                    <a onclick = "openInNewTab('http://www.linkedin.com/in/dizhang-3477942642');">
+                    www.linkedin.com/in/dizhang-3477942642
+                    </a>
+                </li>
+                <li>Github Profile: github.com/dzk9528</li>
                 <br>
                 <li>Seeking for position as a software engineer.</br>
                     A coder and a dancer. Popping is a part of my life!</li>
@@ -67,7 +74,9 @@
         <words class="edu">
         <p><b>Rensselaer Polytechnic Institute (RPI)</b><br>
             Master of Computer and Systems Engineering<br>
-            GPA: 3.7/4.0
+            GPA: 3.7/4.0<br>
+            Courses: 
+            Digital Image Processing, Machine Learning from Data, Introduction to Graphical Models, Pattern Recognition, Deep Learning, Computer Vision
         </p> 
         </words>  
         
@@ -77,6 +86,11 @@
             </p>
         </dateAndAdress>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <!--Bachelor-->
     <section>
@@ -103,16 +117,17 @@
     <!--Research Assistant Intern-->
     <section>
             <words>
-            <p><b>Research Assistant Intern</b></p><br>
-            <p class = "s">Multidimensional Computer Vision Laboratory, RPI</p><br>
+            <p><b>Multidimensional Computer Vision Laboratory, RPI</b></p><br>
+            <p class = "s"></p>Research Assistant Intern<br>
 
             <p class = "s">Development of a video surveillance system for Airport Checkpoint
             </p> 
             <ul class = "s">
                 <li>Transferred video to readable type by applying ffmepg;</li>
-                <li>Applied Background Subtraction and Topological Transformation
-                    in people and bin tracking;</li>
-                <li>Constructed a Neural Network for bin Recognition to reduced false positive rate;</li>
+                <li>Applied Background Subtraction and Topological Transformation in people and bin
+                    tracking and achieve 25fps for video samples by rescaling frames;
+                    Trained a Neural Network classifier in Matlab for luggage 
+                    recognition and achieved 85% accuracy on test videos;</li>
             </ul>
             </words>  
             
@@ -124,22 +139,26 @@
     <!--Research Assistant-->
     <section>
             <words>
-            <p><b>Research Assistant</b></p><br>
-            <p class = "s">Institute of Image Communication and Network Engineering, SJTU</p>
+            <p><b>Institute of Image Communication and Network Engineering, SJTU</b></p><br>
+            <p class = "s">Research Assistant</p>
             <br><br>
             <p class = "s">National Participation in Research Project<br>
             Accurate Surveillance Object Detection based on Visual Consistency Constraint
             </p> 
             <ul class = "s">
-                <li>constructed video data set for falling down people and/or pedestrians;</li>
-                <li>Embedded Aggregated Channel Features detection algorithm into an existing tracking platform</li>
+                <li>Constructed and labeled a large video data set for falling down people and/or
+                    pedestrians;</li>
+                <li>Embedded Aggregated Channel Features detection algorithm into an existing tracking
+                    platform to substitute the manually detection for accurate and real-time automatic
+                    pedestrian detection;</li>
             </ul>
             <br>
             <p class = "s">Bachelor’s Thesis: Pedestrian Detection and Tracking Software</p> 
             <ul class = "s">
                 <li>Decreased False Detection Rate under 5% by joint decision of Detection and Tracking Model</li>
-                <li>Extracted Motion-History Image from the video dataset;</li>
-                <li>Matched templates with Mahalanobis Distance</li>
+                <li>Extracted Motion-History Image from the video dataset and matched templates with
+                    Mahalanobis Distance/Support Vector Machines to realize 
+                    80% accuracy for action recognition for test samples;</li>
             </ul>
             </words>  
             
@@ -155,13 +174,12 @@
     <!--Computer Vision Project-->
     <section>
         <words>
-        <p><b>Computer Vision Project, RPI</b></p><br>
-        <p class = "s">Real-time Face tracking (team project)
-        </p> 
+        <p><b>Real-time Face tracking (team project)</b></p>
         <ul class = "s">
-            <li>Tracked faces with Kalman filter;</li>
-            <li>Applied Kernelized Correlation Filter to accelerate detection;</li>
-            <li>Designed GUI of Face Tracking;</li>
+            <li>Tracked faces with Kalman filter and Applied Kernelized Correlation Filter to accelerate
+                re-detection and achieved 0.55 mean precision and 149 fps on TB-50;</li>
+            <li>Applied OpenCV to capture frames and detect faces and design graphical user interface
+                for face tracking;</li>
         </ul>
         </words>  
         
@@ -173,14 +191,13 @@
     <!--Deep Learning Project-->
     <section>
         <words>
-        <p><b>Deep Learning Project, RPI</b></p><br>
-        <p class = "s">Mobile Eye Gaze Estimation
-        </p> 
+        <p><b>Mobile Eye Gaze Estimation</b></p> 
         <ul class = "s">
             <li>Practiced Graph Visualization of Convolutional Neural Network;</li>
-            <li>Implementd a CNN architecture for Regression;</li>
-            <li>Accelerated training by applying AWS EC2/S3;</li>
-            <li>Tuned Hyper parameters to achieved test error 1.65 cm</li>
+            <li>Trained a CNN architecture for Regression with 48000 groups of image data and tuned
+                Hyper parameters to achieved test error 1.65 cm on 5000 groups of image data;</li>
+            <li>Stored data on Amazon S3 and accelerate training by 15% by applying cloud computing
+                on Amazon EC2 p2-xlarge Deep Learning AMI;</li>
         </ul>
         </words>  
         
@@ -192,13 +209,14 @@
     <!--Digital Image Processing Project-->
     <section>
         <words>
-        <p><b>Digital Image Processing Project, RPI</b></p><br>
-        <p class = "s">Real-time Face Recognition System
-        </p> 
+        <p><b>Real-time Face Recognition System</b></p>
         <ul class = "s">
-            <li>Collected faces dataset; applied Local Binary Pattern features;</li>
-            <li>Trained the model with Principle Component Analysis and Support Vector Machine;</li>
-            <li>Designed GUI for Face Recognition;</li>
+            <li>Collected and labeled a medium size faces dataset;</li>
+            <li>Applied Local Binary Pattern features and trained the model with Principle Component
+                Analysis and Support Vector Machine to achieve 98% accuracy on test data;</li>
+            <li>Applied OpenCV to capture frames and detect faces and design graphical user interface
+                for face recognition which can show the face position and 
+                give statistic recognition results in real-time;</li>
         </ul>
         </words>  
         
@@ -214,7 +232,7 @@
         <p class = "s">Development of a Robot Show System (team leader)
         </p> 
         <ul class = "s">
-            <li>Programed the dances of Robot;</li>
+            <li>Programed the dances of Robot with built-in grapical programming;</li>
             <li>Utilized Google Speech API to man-machine interaction system;</li>
             <li>Developed a Robot Wireless Show System by using TCP/IP techniques;</li>
         </ul>
@@ -233,6 +251,9 @@
             <words>
             Deep Learning Specialization Coursera
             </words>  
+            <words>
+                May 2018
+            </words>
     </section>
     
 </section>

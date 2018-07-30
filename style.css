@@ -85,7 +85,11 @@ intro {
 intro ul{
     list-style: none;
 }
-
+/*
+intro ul li a:hover{
+    color: rgb(36, 22, 231);
+}
+*/
 /* content style */
 words{
     float: left;
